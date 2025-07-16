@@ -1,0 +1,282 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/render/v2.0.0/schema.json"
+  ],
+  "id": "results",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          14.0,
+          36.5
+        ],
+        [
+          14.0,
+          38.54
+        ],
+        [
+          16.04,
+          38.54
+        ],
+        [
+          16.04,
+          36.5
+        ],
+        [
+          14.0,
+          36.5
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    14.0,
+    36.5,
+    16.04,
+    38.54
+  ],
+  "properties": {
+    "start_datetime": "2008-04-29T12:02:05Z",
+    "end_datetime": "2008-04-30T00:00:08Z",
+    "renders": {
+      "render_tephra_col_mass-t001": {
+        "title": "Ash column mass",
+        "assets": [
+          "tephra_col_mass-t001"
+        ],
+        "resampling": "average",
+        "colormap_name": "RdYlBu",
+        "rescale": [
+          [
+            0.1,
+            2.0
+          ]
+        ]
+      },
+      "render_tephra_cloud_top-t001": {
+        "title": "Ash cloud top",
+        "assets": [
+          "tephra_cloud_top-t001"
+        ],
+        "resampling": "nearest",
+        "colormap_name": "viridis",
+        "rescale": [
+          [
+            1000,
+            8000
+          ]
+        ]
+      },
+      "render_tephra_col_mass-t003": {
+        "title": "Ash column mass",
+        "assets": [
+          "tephra_col_mass-t003"
+        ],
+        "resampling": "average",
+        "colormap_name": "RdYlBu",
+        "rescale": [
+          [
+            0.1,
+            2.0
+          ]
+        ]
+      },
+      "render_tephra_cloud_top-t003": {
+        "title": "Ash cloud top",
+        "assets": [
+          "tephra_cloud_top-t003"
+        ],
+        "resampling": "nearest",
+        "colormap_name": "viridis",
+        "rescale": [
+          [
+            1000,
+            8000
+          ]
+        ]
+      }
+    },
+    "datetime": null
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "What-if scenario demonstration"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "What-if scenario demonstration"
+    }
+  ],
+  "assets": {
+    "final.res": {
+      "href": "final.res.nc",
+      "type": "application/netcdf",
+      "title": "FALL3D res file",
+      "roles": [
+        "data"
+      ]
+    },
+    "tephra_col_mass-t001": {
+      "href": "tephra_col_mass-t001.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "tephra_col_mass for step 1",
+      "author": "lmingari",
+      "created": "2025-07-16 13:23:17Z",
+      "key": "tephra_col_mass",
+      "OVR_RESAMPLING_ALG": "NEAREST",
+      "step": "1",
+      "time": "2008-04-29 13:01:41Z",
+      "AREA_OR_POINT": "Area",
+      "proj:code": "EPSG:4326",
+      "proj:shape": [
+        51,
+        51
+      ],
+      "proj:transform": [
+        0.04,
+        0.0,
+        14.0,
+        0.0,
+        0.04,
+        36.5,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "raster:bands": [
+        {
+          "data_type": "float32"
+        }
+      ],
+      "roles": [
+        "data",
+        "visual",
+        "render"
+      ]
+    },
+    "tephra_cloud_top-t001": {
+      "href": "tephra_cloud_top-t001.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "tephra_cloud_top for step 1",
+      "author": "lmingari",
+      "created": "2025-07-16 13:23:18Z",
+      "key": "tephra_cloud_top",
+      "OVR_RESAMPLING_ALG": "NEAREST",
+      "step": "1",
+      "time": "2008-04-29 13:01:41Z",
+      "AREA_OR_POINT": "Area",
+      "proj:code": "EPSG:4326",
+      "proj:shape": [
+        51,
+        51
+      ],
+      "proj:transform": [
+        0.04,
+        0.0,
+        14.0,
+        0.0,
+        0.04,
+        36.5,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "raster:bands": [
+        {
+          "data_type": "float32"
+        }
+      ],
+      "roles": [
+        "data",
+        "visual",
+        "render"
+      ]
+    },
+    "tephra_col_mass-t003": {
+      "href": "tephra_col_mass-t003.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "tephra_col_mass for step 3",
+      "author": "lmingari",
+      "created": "2025-07-16 13:23:19Z",
+      "key": "tephra_col_mass",
+      "OVR_RESAMPLING_ALG": "NEAREST",
+      "step": "3",
+      "time": "2008-04-29 15:01:38Z",
+      "AREA_OR_POINT": "Area",
+      "proj:code": "EPSG:4326",
+      "proj:shape": [
+        51,
+        51
+      ],
+      "proj:transform": [
+        0.04,
+        0.0,
+        14.0,
+        0.0,
+        0.04,
+        36.5,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "raster:bands": [
+        {
+          "data_type": "float32"
+        }
+      ],
+      "roles": [
+        "data",
+        "visual",
+        "render"
+      ]
+    },
+    "tephra_cloud_top-t003": {
+      "href": "tephra_cloud_top-t003.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "tephra_cloud_top for step 3",
+      "author": "lmingari",
+      "created": "2025-07-16 13:23:21Z",
+      "key": "tephra_cloud_top",
+      "OVR_RESAMPLING_ALG": "NEAREST",
+      "step": "3",
+      "time": "2008-04-29 15:01:38Z",
+      "AREA_OR_POINT": "Area",
+      "proj:code": "EPSG:4326",
+      "proj:shape": [
+        51,
+        51
+      ],
+      "proj:transform": [
+        0.04,
+        0.0,
+        14.0,
+        0.0,
+        0.04,
+        36.5,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "raster:bands": [
+        {
+          "data_type": "float32"
+        }
+      ],
+      "roles": [
+        "data",
+        "visual",
+        "render"
+      ]
+    }
+  }
+}
